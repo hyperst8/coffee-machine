@@ -33,7 +33,7 @@ resources = {
 }
 
 
-# TODO: Print report of all coffee machine resources
+# Print report of all coffee machine resources
 def print_report():
     """Printing out amount of resources and profit when function is called"""
     for key, resource in resources.items():
@@ -44,7 +44,7 @@ def print_report():
     print(f"Money: ${profit}")
 
 
-# TODO: Check for resources sufficient before making coffee
+# Check for resources sufficient before making coffee
 def check_resources_sufficient(order_ingredients):
     """Return True when order can be made, False if not enough ingredients"""
     for item in order_ingredients:
@@ -54,7 +54,7 @@ def check_resources_sufficient(order_ingredients):
     return True
 
 
-# TODO: Process coins. Insert different types coins and check if it's enough money
+# Process coins. Insert different types coins and check if it's enough money
 def process_coins(coffee, price):
     """Returns the total calculated from coins inserted"""
     print(f"Price for {coffee.title()}: ${price}")
@@ -67,7 +67,7 @@ def process_coins(coffee, price):
     return total_coins
 
 
-# TODO: Check if transaction is successful
+# Check if transaction is successful
 def is_transaction_successful(money_received, drink_cost):
     """Return True when payment is accepted, or False if money is insufficient"""
     if money_received >= drink_cost:
@@ -81,7 +81,7 @@ def is_transaction_successful(money_received, drink_cost):
         return False
 
 
-# TODO: Make coffee when sufficient resources and transaction successful
+# Make coffee when sufficient resources and transaction successful
 def make_coffee(drink_name, order_ingredients):
     """Deduct the required resources from the resources"""
     for item in order_ingredients:
@@ -89,7 +89,7 @@ def make_coffee(drink_name, order_ingredients):
     print(f"Here is your {drink_name}☕. Enjoy!")
 
 
-# TODO: Ask user what they want to drink as long as the coffee machine is on
+# Ask user what they want to drink as long as the coffee machine is on
 machine_is_on = True
 while machine_is_on:
     choice = input("What would you like to? (espresso/latte/cappuccino): ").lower()
